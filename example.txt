@@ -1,0 +1,6 @@
+<?php
+
+$eventManager = EventManager::getInstance();
+
+$subscribeClass = new foo();
+$eventManager->addEventListener('event_boo', [$subscribeClass, 'function_to_call_name']);
